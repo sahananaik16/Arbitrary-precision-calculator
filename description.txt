@@ -1,0 +1,133 @@
+Project name: Arbitrary Precision Calculator
+Description: An arbitrary precision calculator (APC) in C is a specialized program designed to handle arithmetic operations on numbers 
+            that exceed the limits of standard data types like `int`, `long`, or `double`. It enables calculations with very large or 
+            very small numbers while maintaining precision, making it essential for fields like cryptography, scientific computing, 
+            and financial analysis.The APC typically employs data structures such as linked lists or arrays to represent numbers as 
+            strings or arrays of digits. This allows for flexible storage of numbers regardless of their size. The calculator supports 
+            basic operations, including addition, subtraction, multiplication, and division.
+            Input handling is crucial; the APC reads and parses user input, ensuring that numbers are correctly formatted. Memory 
+            management is also vital, as arbitrary precision calculations can involve large amounts of data. The output is formatted 
+            in a human-readable manner, often allowing for both standard and scientific notation.
+            Overall, an APC is a powerful tool for precise arithmetic, vital for applications that require accuracy beyond what 
+            standard data types can provide.
+
+Test case 1:
+
+Input: ./a.out 12345678 + 12345678
+
+Output: Addition : 12345678 + 12345678
+        Result:24691356
+
+Test case 2:
+
+Input:./a.out 12345678 - 1234
+
+Output: Subtraction : 12345678 - 1234
+        Result:12344444
+
+Test case 3:
+
+Input: ./a.out 12345678 x 12345678
+
+Output: Multiplication : 12345678 x 12345678
+        Result:152415765279684
+
+Test case 4:
+
+Input:  ./a.out 1234567467 / 123456
+
+Output: Division : 1234567467 / 123456
+        Result:10000
+
+Test case 5:
+
+Input: ./a.out 1234567467 / -12345
+
+Output: Division : 1234567467 / -12345
+        Result:-100005
+
+Test case 6:
+
+Input: ./a.out -1234567467 / -12345
+
+Output: Division : -1234567467 / -12345
+        Result:100005
+
+Test case 7:
+
+Input: ./a.out -1234567467 +  -123455343
+
+Output: Addition : -1234567467 + -123455343
+        Result:-1358022810
+
+Test case 8:
+
+Input: ./a.out -1234567467 +  123455343
+
+Output: Addition : -1234567467 + 123455343
+        Result:1111112124
+
+Test case 9:
+
+Input: ./a.out 1234567467 +  -123455343
+
+Output: Addition : 1234567467 + -123455343
+        Result:1111112124
+
+
+Test case 10:
+
+Input: ./a.out 1234567467 -  -123455343
+
+Output: Subtraction : 1234567467 - -123455343
+        Result:1358022810
+
+
+Test case 11:
+
+Input: ./a.out -1234567467 -  -123455343
+
+Output: Subtraction : -1234567467 - -123455343
+        Result:-1111112124 
+
+Test case 12:
+
+Input : ./a.out -1234567467 -  123455343
+
+output : Subtraction : -1234567467 - 123455343
+         Result:-1358022810
+
+Test case 13:
+
+Input : ./a.out -1234567467 x  123455343
+
+output : Multiplication : -1234567467 x 123455343
+         Result:-152413950095126181
+
+Test case 14:
+
+Input : ./a.out -1234567467 x  -123455343
+
+output : Multiplication : -1234567467 x -123455343
+         Result:152413950095126181
+
+Test case 15:
+
+Input : ./a.out 1234567467 x  -123455343
+
+output : Multiplication : 1234567467 x -123455343
+         Result:-152413950095126181
+
+Test case 16:
+
+Input : ./a.out 1234567467 /  0
+
+output : Division by zero is not permitted
+         Division : 1234567467 / 0
+
+Test case 17:
+
+Input : ./a.out -1234567467 /  122377363
+
+output : Division : -1234567467 / 122377363
+         Result:-10
